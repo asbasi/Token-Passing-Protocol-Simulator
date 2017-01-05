@@ -68,13 +68,13 @@ public class Simulation
         Packet currentPacket; 	// Holds the current packet being processed.
         
         // Loop until we simulated the desired number of packets.
-	    while(numPackets != NUM_DESIRED)
+        while(numPackets != NUM_DESIRED)
         {
             currentEvent = gel.removeIndex(0); // Get the next event from the GEL.
             
             currentHost = currentEvent.getHost();
             currentTime = currentEvent.getTime();
-	        currentType = currentEvent.getType(); 
+            currentType = currentEvent.getType(); 
             
             // Packet Arrival
             if(currentType == PKT_ARRIVAL)
